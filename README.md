@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Serverless Plugin Boilerplate
 =============================
 
@@ -47,6 +46,3 @@ npm link <yourpluginname>
 If you would like to learn more about plugins, please check out our [Documentation](http://docs.serverless.com).
 
 Good luck! - [Serverless](http://www.serverless.com)
-=======
-# serverless-authenticatable
->>>>>>> 6daff858453d5401980f26e056a624e69bb170ef
