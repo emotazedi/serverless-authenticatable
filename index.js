@@ -1,23 +1,5 @@
 'use strict';
 
-/**
- * Serverless Plugin Boilerplate
- * - Useful example/starter code for writing a plugin for the Serverless Framework.
- * - In a plugin, you can:
- *    - Create a Custom Action that can be called via the CLI or programmatically via a function handler.
- *    - Overwrite a Core Action that is included by default in the Serverless Framework.
- *    - Add a hook that fires before or after a Core Action or a Custom Action
- *    - All of the above at the same time :)
- *
- * - Setup:
- *    - Make a Serverless Project dedicated for plugin development, or use an existing Serverless Project
- *    - Make a "plugins" folder in the root of your Project and copy this codebase into it. Title it your custom plugin name with the suffix "-dev", like "myplugin-dev"
- *    - Run "npm link" in your plugin, then run "npm link myplugin" in the root of your project.
- *    - Start developing!
- *
- * - Good luck, serverless.com :)
- */
-
 module.exports = function(ServerlessPlugin) { // Always pass in the ServerlessPlugin Class
 
   const path    = require('path'),
@@ -25,10 +7,10 @@ module.exports = function(ServerlessPlugin) { // Always pass in the ServerlessPl
       BbPromise = require('bluebird'); // Serverless uses Bluebird Promises and we recommend you do to because they provide more than your average Promise :)
 
   /**
-   * ServerlessPluginBoierplate
+   * ServerlessAuthenticatable
    */
 
-  class ServerlessPluginBoilerplate extends ServerlessPlugin {
+  class ServerlessAuthenticatable extends ServerlessPlugin {
 
     /**
      * Constructor
@@ -45,7 +27,7 @@ module.exports = function(ServerlessPlugin) { // Always pass in the ServerlessPl
      */
 
     static getName() {
-      return 'com.serverless.' + ServerlessPluginBoilerplate.name;
+      return 'com.serverless.' + ServerlessAuthenticatable.name;
     }
 
     /**
