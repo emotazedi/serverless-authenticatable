@@ -12,19 +12,20 @@
     "url": "https://github.com/serverless/serverless-plugin-boilerplate"
   },
   "keywords": [
-    "serverless plugin boilerplate",
-    "serverless plugin template",
-    "serverless plugin starter",
+    "serverless plugin authentication",
     "serverless framework plugin",
     "serverless applications",
     "serverless plugins",
+    "serverless authentication",
+    "serverless authenticatable",
     "api gateway",
     "lambda",
     "aws",
     "aws lambda",
     "amazon",
     "amazon web services",
-    "serverless.com"
+    "serverless.com",
+    "cognito"
   ],
   "main": "index.js",
   "bin": {},
@@ -39,6 +40,7 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
+    "aws-sdk": "^2.2.46",
     "bluebird": "^3.0.6"
   }
 }
